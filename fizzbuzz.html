@@ -1,0 +1,41 @@
+<html>
+<head>fizzbuzz challange</head>
+<title>fizzbuzz</title>
+<body>
+<script>
+var i;
+var no=prompt("enter the fizzbuzz no(greater than 1):");		//takin input from user
+document.write("<br>");
+if(no <= 1)
+{
+alert("invalid no!! please try again");
+}
+document.write("entered no is:"+no);
+document.write("<br>");
+
+for (i = 1;i < no; i++)
+{
+	if (i%3==0 && i%5==0)
+	{
+		document.write("FizzBuzz");
+		document.write("<br>");
+	}
+	else if(i%3 == 0)
+	{
+	document.write("Fizz");
+	document.write("<br>");
+	}
+	else if (i%5 ==0)
+	{
+		document.write("Buzz");
+		document.write("<br>");
+	}
+	else
+	{
+	document.write(i);
+	document.write("<br>");
+	}
+}
+</script>
+</body>
+</html>
